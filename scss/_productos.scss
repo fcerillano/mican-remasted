@@ -1,0 +1,21 @@
+/*productos ofrecidos*/
+.informacionProductos {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.galeria p {
+  padding-left: 20px;
+  width: 300px;
+  font-size: 1.8rem;
+}
+.galeria img {
+  width: 300px;
+}

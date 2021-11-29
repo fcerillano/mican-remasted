@@ -1,0 +1,160 @@
+@import"./footer";
+@import"./productos";
+@import"./variable";
+@import"./contacto.scss";
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+.header_background{
+  height: 70vh;
+      background-image: url(img/pexels-kateryna-babaieva-7516509.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 35%;
+      background-size: cover;
+      border-bottom: rgba(0, 0, 0, 0.356) 10px solid ;
+      border-radius: 0% 0% 20% 20%;
+}
+.carrito_img{
+  padding-top: 10px;
+  padding-right: 20px;
+
+}
+nav{
+  margin-top: 20px;
+} 
+.nav_list{
+  background-color: rgba(128, 128, 128, 0.205);
+
+}
+.nav_list li a{
+  color: #7ce2e6;
+  
+  font-size: 3.0rem;
+  font-weight: bold;
+}
+.logo{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_animation {
+-webkit-animation: shadow-drop-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+        animation: shadow-drop-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate both;
+}
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.219);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.219);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.514);
+            box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.514);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.219);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.219);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.514);
+            box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.514);
+  }
+}
+
+.logo_img{
+  border-radius: 75%;
+  width: 200px;
+  height: auto;
+  
+}
+
+/**main**/
+
+main{
+  background: rgb(147,146,146);
+background: linear-gradient(0deg, rgba(147,146,146,0.7819502801120448) 0%, rgba(255,252,252,1) 100%);
+  padding-top: 3.0rem;
+
+}
+.main_position{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  
+}
+.main_img{
+  width: 56%;
+  height: 70vh;
+  border-radius: 50%;
+  opacity: 85%;
+}
+.main_section-principal{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.main_section-principal h1{
+  color: #7ce2e6;
+  font-size: 10.0rem;
+  -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-10px);
+  }
+}
+
+.main_section-principal p {
+  font-size: 2.0rem;
+}
+
+@media (max-width:576px){
+  .main_section-principal{
+      align-items: center;
+  }
+}
+.background_main-section2{
+  background-image: url(./img/wesa.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+}
+.main_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:8.0rem;
+  font-size: 3.0rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
